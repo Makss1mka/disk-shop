@@ -1,4 +1,5 @@
 import React from "react"
+import "../../styles/welcomeBlock.css"
 
 export class WelcomeBlock extends React.Component {
     constructor(props) {

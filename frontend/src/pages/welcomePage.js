@@ -6,13 +6,13 @@ import { WelcomeBlock } from '../components/welcomePageParts/welcomeBlock';
 export function WelcomePage() {
   return (
     <>
-      <Header></Header>
+      <Header/>
       <main>
-        <WelcomeBlock></WelcomeBlock>
-        <DescriptionBlock></DescriptionBlock>
+        <WelcomeBlock/>
+        <DescriptionBlock/>
         <div style={{ height: "300px", width: "100%" }} />
       </main>
-      <Footer></Footer>
+      <Footer/>
     </>
   );
 }

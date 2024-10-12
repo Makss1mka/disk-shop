@@ -1,5 +1,6 @@
 import React from "react" 
-import { Icon, IconKatalog, IconPhone, IconShoppingCart, IconUser } from "../utils/icons"
+import { IconKatalog, IconPhone, IconShoppingCart, IconUser } from "../utils/icons"
+import "../styles/header.css"
 
 export class Header extends React.Component {
     constructor(props) {

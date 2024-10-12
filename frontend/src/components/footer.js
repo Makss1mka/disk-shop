@@ -1,5 +1,6 @@
 import React from "react" 
 import { IconFacebook, IconInstagram, IconTelegram, IconTwitter, IconVk, IconYoutube } from "../utils/icons"
+import "../styles/footer.css"
 
 export class Footer extends React.Component {
     constructor(props) {
