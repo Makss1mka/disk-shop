@@ -9,7 +9,7 @@ export type Disk = {
     author: String,
     picture: Url,
     price: Number,
-    actionPrice: Number,
+    salePrice: Number,
     currency: String,
     popularityInd: number,
 }
