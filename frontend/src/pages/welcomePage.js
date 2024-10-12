@@ -1,7 +1,7 @@
-import { DescriptionBlock } from '../components/descriptionBlock';
+import { DescriptionBlock } from '../components/welcomePageParts/descriptionBlock';
 import { Footer } from '../components/footer';
 import { Header } from '../components/header';
-import { WelcomeBlock } from '../components/welcomeBlock';
+import { WelcomeBlock } from '../components/welcomePageParts/welcomeBlock';
 
 export function WelcomePage() {
   return (
