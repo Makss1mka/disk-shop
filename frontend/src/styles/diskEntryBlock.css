@@ -1,0 +1,42 @@
+.disk-entry-block {
+  width: 300px;
+  height: 400px;
+  background-color: rgb(236, 236, 236);
+  border-radius: 30px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+}
+
+.disk-entry-block-img {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  height: 240px;
+  background: url('../assets/pictures/back_2.jpg') center;
+}
+
+.disk-entry-block-text {
+  margin: 4px 15px;
+  font-size: 1em;
+}
+
+.disk-entry-block-price-block {
+  font-size: 2.2em;
+  display: flex;
+  justify-content: flex-end;
+  margin: 4px 35px;
+
+  .disk-entry-block-price-block-price {
+    font-size: 0.75em;
+    text-decoration: line-through;
+    color: rgb(116, 108, 98);
+    margin: 0 15px 0 0;
+    align-self: self-end;
+  }
+  .disk-entry-block-price-block-sale {
+    color: rgb(248, 120, 120);
+  }
+  .disk-entry-block-price-block-without-sale {
+
+  }
+}
