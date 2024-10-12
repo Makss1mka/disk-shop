@@ -44,7 +44,6 @@ export class Header extends React.Component {
             </header>
         )
     }
-
 }
 
 function HeaderButton({ className, text, textClassName, Icon, iconClassName, onClick=()=>{} }) {
