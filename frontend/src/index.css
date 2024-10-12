@@ -166,3 +166,68 @@ body {
 
 }
 
+.description-block {
+  background-color: rgb(255, 247, 209);
+  width: 100%;
+  margin: 0;
+  padding: 20px 0;
+
+  .description-content {
+    width: 45%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+
+    @media (max-width: 1150px) {
+      width: 60%;
+    }
+    @media (max-width: 900px) {
+      width: 75%;
+    }
+    @media (max-width: 700px) {
+      width: 90%;
+    }
+    @media (max-width: 550px) {
+      width: 90%;
+      flex-direction: column;
+    }
+  }
+
+  .description-content-item {
+    width: 40%;
+    color: rgb(128, 110, 62);
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media (max-width: 550px) {
+      width: 100%;
+    }
+  }
+
+  .description-katalog-button {
+    background-color: rgb(185, 121, 1);
+    color: white;
+    padding: 15px 15px;
+    margin: 10px 0 0;
+    font-size: 1.5em;
+    font-weight: 700;
+    border-radius: 25px;
+    border: none;
+
+    transition: 500ms ease;
+    &:hover {
+      color: rgb(128, 110, 62);
+      background-color: rgb(247, 181, 82);
+      scale: 1.1;
+    }
+    
+    @media (max-width: 550px) {
+      width: 90%;
+      align-self: center;
+      padding: 15px 15px;
+    }
+  }
+}
+
