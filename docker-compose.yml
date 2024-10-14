@@ -1,5 +1,24 @@
+version: '3.8'
+
 services:
   frontend:
     build: ./frontend
-
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    networks:
+      - default_net
   backend:
+    build: ./backend
+    expose:
+      - "3000"
+    environment:
+      - NODE_ENV=production
+    networks:
+      - default_net
+
+networks:
+  default_net:
+    driver: bridge
+    
