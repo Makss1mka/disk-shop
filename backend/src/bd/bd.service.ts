@@ -15,4 +15,12 @@ export class BdService {
             return BD_IMITATION[id - 1];
         }
     }
+
+    getPage(page: number) {
+        if (page < 1 || page > Math.ceil(BD_IMITATION.length / 12)) {
+            return null;
+        } else {
+            return BD_IMITATION.slice(12 * (page - 1), 12 * page)
+        }
+    }
 }

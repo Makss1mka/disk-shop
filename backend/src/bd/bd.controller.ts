@@ -1,18 +1,23 @@
-import { Controller, Get, Param, ParseIntPipe } from '@nestjs/common';
+import { Controller, Get, Param, ParseIntPipe, Query } from '@nestjs/common';
 import { BdService } from './bd.service';
+import { query } from 'express';
 
-@Controller('disks')
+@Controller('search')
 export class BdController {
   constructor(private readonly bdService: BdService) {}
 
-  @Get("/getAll")
+  @Get("/all")
   async getAll() {
     return JSON.stringify(this.bdService.getAll())
   }
 
-  @Get("/get/:id")
+  @Get("/:id")
   async getById(@Param("id", ParseIntPipe) id: number) {
     return JSON.stringify(this.bdService.getById(id))
   }
 
+  @Get("")
+  async getPagedData(@Query('query') query: string, @Query('page') page: number) {
+    return JSON.stringify(this.bdService.getPage(page));
+  }
 }
