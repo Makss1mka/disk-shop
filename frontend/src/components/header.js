@@ -1,12 +1,10 @@
 import React from "react" 
 import { IconKatalog, IconPhone, IconShoppingCart, IconUser } from "../utils/icons"
 import "../styles/header.css"
+import { KatalogList } from "./katalogPageParts/katalog";
+import { goToKatalog } from "../utils/buttons/katalogButton";
 
 export class Header extends React.Component {
-    constructor(props) {
-        super(props)
-    }
-
     render() {
         return (
             <header className="header">
@@ -17,6 +15,7 @@ export class Header extends React.Component {
                         textClassName="header-button-text"
                         Icon={IconKatalog}
                         iconClassName="header-button-icon"
+                        onClick={goToKatalog}      
                     />
                     <HeaderButton 
                         className="header-button"

@@ -4,7 +4,7 @@ import "./styles/body.css"
 
 function App() {
   return (
-      <KatalogPage/>
+      <WelcomePage/>
   );
 }
 

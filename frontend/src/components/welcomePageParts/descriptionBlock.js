@@ -1,5 +1,6 @@
 import React from "react"
 import "../../styles/description.css"
+import { goToKatalog } from "../../utils/buttons/katalogButton"
 
 export class DescriptionBlock extends React.Component {
     constructor(props) {
@@ -17,7 +18,7 @@ export class DescriptionBlock extends React.Component {
                     </p>
                     <div className="description-block-item">
                         <p>Скорее переходите в каталог, чтобы выбрать, то что нравится.</p>
-                        <button onClick={()=>{}} className="description-katalog-button">Перейти в каталог</button>
+                        <button onClick={goToKatalog} className="description-katalog-button">Перейти в каталог</button>
                     </div>      
                 </div>  
             </div>

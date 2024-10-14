@@ -1,0 +1,25 @@
+.katalog-outer {
+  width: 100%;
+  padding: 20px 0;
+  margin: 0 auto;
+  background-color: rgb(255, 253, 245);
+}
+
+.katalog {
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 20px 8px;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 70%;
+
+  @media (max-width: 1075px) and (min-width: 790px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  @media (max-width: 790px) and (min-width: 441px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (max-width: 441px) and (min-width: 0px) {
+    grid-template-columns: 1fr;
+  }
+}   
